@@ -1,6 +1,6 @@
 ﻿namespace rabota2
 {
-    partial class FormProduct
+    partial class FormClient
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.StripMenu_Add = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Change = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Delete = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Exit = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView
+            // dataGridView2
             // 
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 61);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(652, 310);
-            this.dataGridView.TabIndex = 0;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(74, 70);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(652, 310);
+            this.dataGridView2.TabIndex = 1;
             // 
-            // menuStrip1
+            // menuStrip2
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StripMenu_Add,
             this.StripMenu_Change,
             this.StripMenu_Delete,
             this.StripMenu_Exit});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip2.TabIndex = 2;
+            this.menuStrip2.Text = "menuStrip1";
             // 
             // StripMenu_Add
             // 
@@ -87,20 +87,18 @@
             this.StripMenu_Exit.Text = "Выход";
             this.StripMenu_Exit.Click += new System.EventHandler(this.StripMenu_Exit_Click);
             // 
-            // FormProduct
+            // FormClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FormProduct";
-            this.Text = "FormProduct";
-            this.Load += new System.EventHandler(this.FormProduct_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Controls.Add(this.menuStrip2);
+            this.Controls.Add(this.dataGridView2);
+            this.Name = "FormClient";
+            this.Text = "FormClient";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,8 +106,8 @@
 
         #endregion
 
-        private DataGridView dataGridView;
-        private MenuStrip menuStrip1;
+        private DataGridView dataGridView2;
+        private MenuStrip menuStrip2;
         private ToolStripMenuItem StripMenu_Add;
         private ToolStripMenuItem StripMenu_Change;
         private ToolStripMenuItem StripMenu_Delete;

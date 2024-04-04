@@ -55,13 +55,14 @@
             this.StripMenu_Items.Name = "StripMenu_Items";
             this.StripMenu_Items.Size = new System.Drawing.Size(60, 20);
             this.StripMenu_Items.Text = "Товары";
+            this.StripMenu_Items.Click += new System.EventHandler(this.StripMenu_Items_Click);
             // 
             // StripMenu_Clients
             // 
             this.StripMenu_Clients.Name = "StripMenu_Clients";
             this.StripMenu_Clients.Size = new System.Drawing.Size(67, 20);
             this.StripMenu_Clients.Text = "Клиенты";
-            this.StripMenu_Clients.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+           
             // 
             // StripMenu_Overhead
             // 

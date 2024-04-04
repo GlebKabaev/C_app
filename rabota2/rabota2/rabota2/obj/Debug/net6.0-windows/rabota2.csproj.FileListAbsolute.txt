@@ -24,3 +24,6 @@ Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.dll
 Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\ref\rabota2.dll
 Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.pdb
 Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.genruntimeconfig.cache
+Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.Form_add.resources
+Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.FormClient.resources
+Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.FormClientAdd.resources
