@@ -27,3 +27,6 @@ Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.genruntimeco
 Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.Form_add.resources
 Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.FormClient.resources
 Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.FormClientAdd.resources
+Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.Form_futura.resources
+Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.FuturaFormAdd.resources
+Z:\c_sharp\rabota2\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.FormFuturaInfoAdd.resources

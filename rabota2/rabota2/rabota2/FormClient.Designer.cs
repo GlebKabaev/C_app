@@ -96,6 +96,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Name = "FormClient";
             this.Text = "FormClient";
+            this.Load += new System.EventHandler(this.FormClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();

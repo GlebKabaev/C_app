@@ -62,13 +62,14 @@
             this.StripMenu_Clients.Name = "StripMenu_Clients";
             this.StripMenu_Clients.Size = new System.Drawing.Size(67, 20);
             this.StripMenu_Clients.Text = "Клиенты";
-           
+            this.StripMenu_Clients.Click += new System.EventHandler(this.StripMenu_Clients_Click);
             // 
             // StripMenu_Overhead
             // 
             this.StripMenu_Overhead.Name = "StripMenu_Overhead";
             this.StripMenu_Overhead.Size = new System.Drawing.Size(81, 20);
             this.StripMenu_Overhead.Text = "Накладные";
+            this.StripMenu_Overhead.Click += new System.EventHandler(this.StripMenu_Overhead_Click);
             // 
             // StripMenu_Report
             // 

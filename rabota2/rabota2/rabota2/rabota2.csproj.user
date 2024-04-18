@@ -11,10 +11,19 @@
     <Compile Update="FormClientAdd.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormFuturaInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form_futura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FuturaFormAdd.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

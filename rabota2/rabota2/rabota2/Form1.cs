@@ -23,8 +23,7 @@ namespace rabota2
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            FormClient fc = new FormClient(con);
-            fc.ShowDialog();
+           
         }
 
        
@@ -38,6 +37,19 @@ namespace rabota2
         {
             FormProduct fp = new FormProduct(con);
             fp.ShowDialog();
+        }
+
+        private void StripMenu_Overhead_Click(object sender, EventArgs e)
+        {
+            Form_futura ff=new Form_futura(con);
+            ff.ShowDialog();
+        }
+
+        private void StripMenu_Clients_Click(object sender, EventArgs e)
+        {
+            FormClient fc = new FormClient(con);
+            fc.ShowDialog();
+
         }
     }
 }

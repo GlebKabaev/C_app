@@ -46,9 +46,9 @@ namespace rabota2
         private void StripMenu_Add_Click(object sender, EventArgs e)
         {
             FormClientAdd fca=new FormClientAdd(con);
-            Update();
-            fca.ShowDialog();
             
+            fca.ShowDialog();
+            Update();
         }
 
         private void StripMenu_Delete_Click(object sender, EventArgs e)
@@ -83,6 +83,11 @@ namespace rabota2
             string adres = (string)dataGridView2.CurrentRow.Cells["adress"].Value;
             FormClientAdd fca = new FormClientAdd(con, id, name, phone,adres);
             fca.ShowDialog();
+            Update();
+        }
+
+        private void FormClient_Load(object sender, EventArgs e)
+        {
             Update();
         }
     }

@@ -44,6 +44,7 @@ namespace rabota2
                     command.Parameters.AddWithValue("adress", textBoxAdres.Text);
                     command.ExecuteNonQuery();
                     Close();
+                    
                 }
                 catch { }
             }
