@@ -1,0 +1,28 @@
+CREATE OR REPLACE FUNCTION Futurafiler_fnc()
+	RETURNS trigger AS
+$$
+BEGIN
+	UPDATE Futura set TotalSum=Totalsum+New.Quantity*New.Price
+	Where  Furura.ID=New.IDfutura;
+END
+$$
+LANGUAGE 'plpgsql';
+CREATE OR REPLACE FUNCTION DelFuturafiler_fnc()
+	RETURNS trigger AS
+$$
+Begin
+	UPDATE Futura set TotalSum=Totalsum-Old.Quantity*Old.Price
+	Where  Furura.ID=Old.IDfutura;
+end
+$$
+LANGUAGE 'plpgsql';
+Create Trigger Fururafiler
+	After Insert ON Futurainfo
+	For EACH ROW
+	EXECUTE PROCEDURE Futurafiler_fnc();
+	
+Create Trigger FururaDeleter
+	After DELETE ON Futurainfo
+	For EACH ROW
+	EXECUTE PROCEDURE DelFuturafiler_fnc();
+
