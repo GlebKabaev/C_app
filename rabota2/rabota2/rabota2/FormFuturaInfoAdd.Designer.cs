@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.prodcomboBox = new System.Windows.Forms.ComboBox();
+            this.textBoxQan = new System.Windows.Forms.TextBox();
+            this.textBoxPr = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.add_button = new System.Windows.Forms.Button();
+            this.close_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // prodcomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(25, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(214, 23);
-            this.comboBox1.TabIndex = 0;
+            this.prodcomboBox.FormattingEnabled = true;
+            this.prodcomboBox.Location = new System.Drawing.Point(25, 36);
+            this.prodcomboBox.Name = "prodcomboBox";
+            this.prodcomboBox.Size = new System.Drawing.Size(214, 23);
+            this.prodcomboBox.TabIndex = 0;
             // 
-            // textBox1
+            // textBoxQan
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 23);
-            this.textBox1.TabIndex = 1;
+            this.textBoxQan.Location = new System.Drawing.Point(25, 95);
+            this.textBoxQan.Name = "textBoxQan";
+            this.textBoxQan.Size = new System.Drawing.Size(214, 23);
+            this.textBoxQan.TabIndex = 1;
             // 
-            // textBox2
+            // textBoxPr
             // 
-            this.textBox2.Location = new System.Drawing.Point(25, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 23);
-            this.textBox2.TabIndex = 2;
+            this.textBoxPr.Location = new System.Drawing.Point(25, 151);
+            this.textBoxPr.Name = "textBoxPr";
+            this.textBoxPr.Size = new System.Drawing.Size(214, 23);
+            this.textBoxPr.TabIndex = 2;
             // 
             // label1
             // 
@@ -88,40 +88,42 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Цена";
             // 
-            // button1
+            // add_button
             // 
-            this.button1.Location = new System.Drawing.Point(285, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.add_button.Location = new System.Drawing.Point(285, 36);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(75, 23);
+            this.add_button.TabIndex = 6;
+            this.add_button.Text = "Добавить";
+            this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // close_button
             // 
-            this.button2.Location = new System.Drawing.Point(285, 65);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Закрыть";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.close_button.Location = new System.Drawing.Point(285, 65);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(75, 23);
+            this.close_button.TabIndex = 7;
+            this.close_button.Text = "Закрыть";
+            this.close_button.UseVisualStyleBackColor = true;
+            this.close_button.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormFuturaInfoAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 535);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.close_button);
+            this.Controls.Add(this.add_button);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBoxPr);
+            this.Controls.Add(this.textBoxQan);
+            this.Controls.Add(this.prodcomboBox);
             this.Name = "FormFuturaInfoAdd";
             this.Text = "FormFuturaInfoAdd";
+            this.Load += new System.EventHandler(this.FormFuturaInfoAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,13 +131,13 @@
 
         #endregion
 
-        private ComboBox comboBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private ComboBox prodcomboBox;
+        private TextBox textBoxQan;
+        private TextBox textBoxPr;
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button button1;
-        private Button button2;
+        private Button add_button;
+        private Button close_button;
     }
 }

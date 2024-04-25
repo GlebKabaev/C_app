@@ -80,6 +80,7 @@
             this.comboBoxClient.Name = "comboBoxClient";
             this.comboBoxClient.Size = new System.Drawing.Size(121, 23);
             this.comboBoxClient.TabIndex = 23;
+            this.comboBoxClient.SelectedIndexChanged += new System.EventHandler(this.comboBoxClient_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 

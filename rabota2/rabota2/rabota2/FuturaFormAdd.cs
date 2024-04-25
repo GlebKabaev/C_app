@@ -55,5 +55,10 @@ namespace rabota2
             
             
         }
+
+        private void comboBoxClient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
