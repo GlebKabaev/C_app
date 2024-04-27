@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "YeMCF5Iq0IIGNA6ug3ZJ/mYeVFrZaa1HJNSVMTnJdcNozWJHGRTl45xHu/LfmVz5tDykRe611gF/e6qJS7qpbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\glebk\\Desktop\\Capp\\rabota2\\rabota2\\rabota2\\rabota2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\glebk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\glebk\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\glebk\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\glebk\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\glebk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\glebk\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\glebk\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
