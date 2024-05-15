@@ -28,70 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.StripMenu_Items = new System.Windows.Forms.ToolStripMenuItem();
-            this.StripMenu_Clients = new System.Windows.Forms.ToolStripMenuItem();
-            this.StripMenu_Overhead = new System.Windows.Forms.ToolStripMenuItem();
-            this.StripMenu_Report = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new MenuStrip();
+            StripMenu_Items = new ToolStripMenuItem();
+            StripMenu_Clients = new ToolStripMenuItem();
+            StripMenu_Overhead = new ToolStripMenuItem();
+            StripMenu_Report = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StripMenu_Items,
-            this.StripMenu_Clients,
-            this.StripMenu_Overhead,
-            this.StripMenu_Report});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(873, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "Меню";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { StripMenu_Items, StripMenu_Clients, StripMenu_Overhead, StripMenu_Report });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(873, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "Меню";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // StripMenu_Items
             // 
-            this.StripMenu_Items.Name = "StripMenu_Items";
-            this.StripMenu_Items.Size = new System.Drawing.Size(60, 20);
-            this.StripMenu_Items.Text = "Товары";
-            this.StripMenu_Items.Click += new System.EventHandler(this.StripMenu_Items_Click);
+            StripMenu_Items.Name = "StripMenu_Items";
+            StripMenu_Items.Size = new Size(60, 20);
+            StripMenu_Items.Text = "Товары";
+            StripMenu_Items.Click += StripMenu_Items_Click;
             // 
             // StripMenu_Clients
             // 
-            this.StripMenu_Clients.Name = "StripMenu_Clients";
-            this.StripMenu_Clients.Size = new System.Drawing.Size(67, 20);
-            this.StripMenu_Clients.Text = "Клиенты";
-            this.StripMenu_Clients.Click += new System.EventHandler(this.StripMenu_Clients_Click);
+            StripMenu_Clients.Name = "StripMenu_Clients";
+            StripMenu_Clients.Size = new Size(67, 20);
+            StripMenu_Clients.Text = "Клиенты";
+            StripMenu_Clients.Click += StripMenu_Clients_Click;
             // 
             // StripMenu_Overhead
             // 
-            this.StripMenu_Overhead.Name = "StripMenu_Overhead";
-            this.StripMenu_Overhead.Size = new System.Drawing.Size(81, 20);
-            this.StripMenu_Overhead.Text = "Накладные";
-            this.StripMenu_Overhead.Click += new System.EventHandler(this.StripMenu_Overhead_Click);
+            StripMenu_Overhead.Name = "StripMenu_Overhead";
+            StripMenu_Overhead.Size = new Size(81, 20);
+            StripMenu_Overhead.Text = "Накладные";
+            StripMenu_Overhead.Click += StripMenu_Overhead_Click;
             // 
             // StripMenu_Report
             // 
-            this.StripMenu_Report.Name = "StripMenu_Report";
-            this.StripMenu_Report.Size = new System.Drawing.Size(60, 20);
-            this.StripMenu_Report.Text = "Отчеты";
+            StripMenu_Report.Name = "StripMenu_Report";
+            StripMenu_Report.Size = new Size(60, 20);
+            StripMenu_Report.Text = "Отчеты";
+            StripMenu_Report.Click += StripMenu_Report_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 536);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(873, 536);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -3,12 +3,12 @@ namespace rabota2
 {
     public partial class Form1 : Form
     {
-       
+
         public Form1()
         {
-            
+
             InitializeComponent();
-           
+
         }
         public NpgsqlConnection con;
         public void MyLoad()
@@ -18,15 +18,15 @@ namespace rabota2
             con.Open();
 
         }
-        
-       
+
+
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-           
+
         }
 
-       
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -41,7 +41,7 @@ namespace rabota2
 
         private void StripMenu_Overhead_Click(object sender, EventArgs e)
         {
-            Form_futura ff=new Form_futura(con);
+            Form_futura ff = new Form_futura(con);
             ff.ShowDialog();
         }
 
@@ -50,6 +50,12 @@ namespace rabota2
             FormClient fc = new FormClient(con);
             fc.ShowDialog();
 
+        }
+
+        private void StripMenu_Report_Click(object sender, EventArgs e)
+        {
+            ReportForm rp = new ReportForm(con);
+            rp.ShowDialog();
         }
     }
 }

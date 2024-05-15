@@ -18,10 +18,11 @@ namespace rabota2
         public int id;
         DataTable dt = new DataTable();
         DataSet ds = new DataSet();
-        public FormFuturaInfoAdd(NpgsqlConnection con)
+        public FormFuturaInfoAdd(NpgsqlConnection con,int id)
         {
             InitializeComponent();
             this.con = con;
+            this.id = id;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -59,12 +60,13 @@ namespace rabota2
             cmd.Parameters.AddWithValue("price", Convert.ToDouble(textBoxPr.Text));
             if (checkBox1.Checked == true)
             {
-                cmd.Parameters.AddWithValue("payment", "True");
+                cmd.Parameters.AddWithValue("payment", true);
             }
             else
             {
-                cmd.Parameters.AddWithValue("payment", "False");
+                cmd.Parameters.AddWithValue("payment", false);
             }
+            cmd.Parameters.AddWithValue("idfutura", id);
             cmd.ExecuteNonQuery();
             Close();
 

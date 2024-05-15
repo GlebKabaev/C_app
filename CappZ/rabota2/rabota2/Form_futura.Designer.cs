@@ -28,103 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.AddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.futuraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.futurainfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.SuspendLayout();
+            menuStrip1 = new MenuStrip();
+            AddToolStripMenuItem = new ToolStripMenuItem();
+            futuraToolStripMenuItem = new ToolStripMenuItem();
+            futurainfoToolStripMenuItem = new ToolStripMenuItem();
+            DeleteToolStripMenuItem = new ToolStripMenuItem();
+            futuraDeleteButton = new ToolStripMenuItem();
+            futuraInfoDelete = new ToolStripMenuItem();
+            ExitToolStripMenuItem = new ToolStripMenuItem();
+            dataGridView1 = new DataGridView();
+            dataGridView2 = new DataGridView();
+            button1 = new Button();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AddToolStripMenuItem,
-            this.DeleteToolStripMenuItem,
-            this.ExitToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1555, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { AddToolStripMenuItem, DeleteToolStripMenuItem, ExitToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1555, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // AddToolStripMenuItem
             // 
-            this.AddToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.futuraToolStripMenuItem,
-            this.futurainfoToolStripMenuItem});
-            this.AddToolStripMenuItem.Name = "AddToolStripMenuItem";
-            this.AddToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.AddToolStripMenuItem.Text = "Добавить";
-            this.AddToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
+            AddToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { futuraToolStripMenuItem, futurainfoToolStripMenuItem });
+            AddToolStripMenuItem.Name = "AddToolStripMenuItem";
+            AddToolStripMenuItem.Size = new Size(71, 20);
+            AddToolStripMenuItem.Text = "Добавить";
+            AddToolStripMenuItem.Click += добавитьToolStripMenuItem_Click;
             // 
             // futuraToolStripMenuItem
             // 
-            this.futuraToolStripMenuItem.Name = "futuraToolStripMenuItem";
-            this.futuraToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.futuraToolStripMenuItem.Text = "Futura";
-            this.futuraToolStripMenuItem.Click += new System.EventHandler(this.futuraToolStripMenuItem_Click);
+            futuraToolStripMenuItem.Name = "futuraToolStripMenuItem";
+            futuraToolStripMenuItem.Size = new Size(129, 22);
+            futuraToolStripMenuItem.Text = "Futura";
+            futuraToolStripMenuItem.Click += futuraToolStripMenuItem_Click;
             // 
             // futurainfoToolStripMenuItem
             // 
-            this.futurainfoToolStripMenuItem.Name = "futurainfoToolStripMenuItem";
-            this.futurainfoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.futurainfoToolStripMenuItem.Text = "Futurainfo";
-            this.futurainfoToolStripMenuItem.Click += new System.EventHandler(this.futurainfoToolStripMenuItem_Click);
+            futurainfoToolStripMenuItem.Name = "futurainfoToolStripMenuItem";
+            futurainfoToolStripMenuItem.Size = new Size(129, 22);
+            futurainfoToolStripMenuItem.Text = "Futurainfo";
+            futurainfoToolStripMenuItem.Click += futurainfoToolStripMenuItem_Click;
             // 
             // DeleteToolStripMenuItem
             // 
-            this.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem";
-            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.DeleteToolStripMenuItem.Text = "Удалиь";
+            DeleteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { futuraDeleteButton, futuraInfoDelete });
+            DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem";
+            DeleteToolStripMenuItem.Size = new Size(58, 20);
+            DeleteToolStripMenuItem.Text = "Удалиь";
+            // 
+            // futuraDeleteButton
+            // 
+            futuraDeleteButton.Name = "futuraDeleteButton";
+            futuraDeleteButton.Size = new Size(127, 22);
+            futuraDeleteButton.Text = "futura";
+            futuraDeleteButton.Click += futuraDeleteButton_Click;
+            // 
+            // futuraInfoDelete
+            // 
+            futuraInfoDelete.Name = "futuraInfoDelete";
+            futuraInfoDelete.Size = new Size(127, 22);
+            futuraInfoDelete.Text = "futuraInfo";
+            futuraInfoDelete.Click += futuraInfoDelete_Click;
             // 
             // ExitToolStripMenuItem
             // 
-            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.ExitToolStripMenuItem.Text = "Выход";
-            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            ExitToolStripMenuItem.Size = new Size(54, 20);
+            ExitToolStripMenuItem.Text = "Выход";
+            ExitToolStripMenuItem.Click += ExitToolStripMenuItem_Click;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(72, 149);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(641, 420);
-            this.dataGridView1.TabIndex = 1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(72, 149);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(641, 420);
+            dataGridView1.TabIndex = 1;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(861, 149);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(636, 420);
-            this.dataGridView2.TabIndex = 2;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(861, 149);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(636, 420);
+            dataGridView2.TabIndex = 2;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(754, 602);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "обновить";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form_futura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1555, 663);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form_futura";
-            this.Text = "Form_futura";
-            this.Load += new System.EventHandler(this.Form_futura_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1555, 663);
+            Controls.Add(button1);
+            Controls.Add(dataGridView2);
+            Controls.Add(dataGridView1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form_futura";
+            Text = "Form_futura";
+            Load += Form_futura_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -137,5 +160,8 @@
         private DataGridView dataGridView2;
         private ToolStripMenuItem futuraToolStripMenuItem;
         private ToolStripMenuItem futurainfoToolStripMenuItem;
+        private ToolStripMenuItem futuraDeleteButton;
+        private ToolStripMenuItem futuraInfoDelete;
+        private Button button1;
     }
 }

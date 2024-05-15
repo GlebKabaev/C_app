@@ -441,11 +441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\glebk\\Desktop\\Capp\\rabota2\\rabota2\\rabota2\\rabota2.csproj",
+      "projectUniqueName": "C:\\Users\\glebk\\Desktop\\CappZ\\rabota2\\rabota2\\rabota2.csproj",
       "projectName": "rabota2",
-      "projectPath": "C:\\Users\\glebk\\Desktop\\Capp\\rabota2\\rabota2\\rabota2\\rabota2.csproj",
+      "projectPath": "C:\\Users\\glebk\\Desktop\\CappZ\\rabota2\\rabota2\\rabota2.csproj",
       "packagesPath": "C:\\Users\\glebk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\glebk\\Desktop\\Capp\\rabota2\\rabota2\\rabota2\\obj\\",
+      "outputPath": "C:\\Users\\glebk\\Desktop\\CappZ\\rabota2\\rabota2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\glebk\\AppData\\Roaming\\NuGet\\NuGet.Config",
