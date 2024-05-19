@@ -116,17 +116,18 @@ namespace rabota2
             int day2 = dateTimePicker2.Value.Day;
             int month2 = dateTimePicker2.Value.Month;
             int year2 = dateTimePicker2.Value.Year;
-            String sql = String.Format("select * from futura where data>= '{0}-{1}-{2}' and data<= '{3}-{4}-{5}'", year1, month1, day1, year2, month2, day2);
+            String sql = String.Format("select data,totalsum,sup_name from futura as fut join futura_info as fut_i on(fut.id_futura=fut_i.id_futura) join supplier as sup on (fut.id_supplier=sup.id_supplier) where data>= '{0}-{1}-{2}' and data<= '{3}-{4}-{5}'and payment=false and data< current_date", year1, month1, day1, year2, month2, day2);
             richTextBox1.AppendText(sql);
             NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, con);
             ds.Reset();
             da.Fill(ds);
             dt = ds.Tables[0];
             dataGridView1.DataSource = dt;
-            dataGridView1.Columns[0].HeaderText = "Номер";
-            dataGridView1.Columns[1].HeaderText = "Номер поставщика";
-            dataGridView1.Columns[2].HeaderText = "Дата";
-            dataGridView1.Columns[3].HeaderText = "Сумма";
+            dataGridView1.Columns[0].HeaderText = "Дата";
+            dataGridView1.Columns[1].HeaderText = "Сумма длога";
+            dataGridView1.Columns[2].HeaderText = "Имя поставщика";
+            //dataGridView1.Columns[2].HeaderText = "Дата";
+            //dataGridView1.Columns[3].HeaderText = "Сумма";
             StartPosition = FormStartPosition.CenterScreen;
         }
     }
