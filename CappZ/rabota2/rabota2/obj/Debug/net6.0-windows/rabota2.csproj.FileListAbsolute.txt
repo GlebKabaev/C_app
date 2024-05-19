@@ -95,3 +95,5 @@ C:\Users\glebk\Desktop\CappZ\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.cs
 C:\Users\glebk\Desktop\CappZ\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.genruntimeconfig.cache
 C:\Users\glebk\Desktop\CappZ\rabota2\rabota2\obj\Debug\net6.0-windows\ref\rabota2.dll
 C:\Users\glebk\Desktop\CappZ\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.ReportForm.resources
+C:\Users\glebk\Desktop\CappZ\rabota2\rabota2\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\glebk\Desktop\CappZ\rabota2\rabota2\obj\Debug\net6.0-windows\rabota2.csproj.ResolveComReference.cache
